@@ -142,3 +142,41 @@ Bocetos de baja fidelidad de las pantallas principales. Se refinarán visualment
 - [ ] Diseñar la interfaz visual de alta fidelidad (UI) a partir de estos wireframes.
 - [ ] Estructurar el repositorio en carpetas: `/app` (móvil), `/backend` (API) y `/admin` (panel web).
 - [ ] Documentar el avance de forma incremental en este README.
+Changelog
+## 📜 Registro de Cambios (Changelog)
+
+Todos los cambios notables en el proyecto **PrecioYa PA** serán documentados en esta sección. El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
+
+---
+
+### [Unreleased] - Cambios Futuros Planeados
+
+#### Añado (Planificado para Fase 2 / Post-MVP)
+- **Escáner de Código de Barras (EAN-13):** Integración con la cámara para identificación unívoca e instantánea de productos en pasillo.
+- **Historial Gráfico de Precios:** Gráficas interactivas del comportamiento de precios a lo largo del tiempo.
+- **Notificaciones Push Personalizadas:** Alertas automatizadas cuando un producto de la lista de compras baje de precio.
+- **Algoritmo de Ruta Óptima:** Cálculo de rutas eficientes considerando el costo de transporte/gasolina vs. el ahorro total obtenido.
+
+---
+
+### [0.2.0] - 2026-09-27 (Cambios Actuales)
+
+#### Modificado
+- **Reorganización del MVP (Fase 1):** Se movieron las notificaciones push y los gráficos de historial a la Fase 2 para priorizar la estabilidad de la búsqueda y la gestión de listas en la primera entrega.
+- **Motor de Búsqueda de Productos:** Actualización de la arquitectura para utilizar un motor de búsqueda dedicado (Meilisearch/Typesense) en lugar de consultas SQL directas.
+
+#### Añado
+- **Estrategia de Captura Híbrida de Datos:** Mecanismo de actualización mediante web scraping automatizado de sitios de supermercados locales y un sistema de control de confianza por niveles (Scraping, Admin, Comunidad).
+- **Soporte Geoespacial en Base de Datos:** Adopción de PostgreSQL con la extensión PostGIS para consultas eficientes de sucursales por radio de proximidad.
+- **Normalización de Precios:** Indicador de Precio por Unidad de Medida (PUM) para comparar productos con distintos empaques o gramajes.
+- **Etiquetado de Productos Regulados:** Distintivo visual para identificar artículos bajo el régimen de Control de Precios (ACODECO).
+
+---
+
+### [0.1.0] - 2026-09-15 (Cambios Pasados)
+
+#### Añado
+- **Definición del Concepto y Problema:** Documentación inicial del impacto del costo de la canasta básica en la Ciudad de Panamá.
+- **Arquitectura de Software Propuesta:** Definición del stack tecnológico (Flutter para app móvil, React para panel web y Node.js/NestJS para API backend).
+- **Especificación de Funcionalidades:** Definición del flujo de usuario (consumidor) y panel de administración.
+- **Wireframes Iniciales:** Bocetos de baja fidelidad para las pantallas clave (Inicio, Comparador, Lista de Compras, Mapa de Sucursales y Panel Admin).
